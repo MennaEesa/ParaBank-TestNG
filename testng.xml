@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="XYZ_Bank_TestNG">
+    <listeners>
+        <listener class-name="listener.Listener"></listener>
+    </listeners>
+    <parameter name="browser" value=""/>
+    <test name="Login with Customer">
+        <classes>
+            <class name="TestCases.TC01_CustomerLogin">
+              <methods>
+                  <include name="customerLogin"/>
+                  <include name="deposit"/>
+                  <include name="Withdrawl"/>
+                  <include name="TransActions"/>
+              </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
